@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+   background-color: hsl(346deg, 17%,70%);
+   display: flex;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:300px;
+    left: 8%;
+    top:5%;
+}
+#nav img{
+    height: 60px;
+}
+#nav h5{
+    font-size: 20px;
+    color: #fff;
+    font-family: "gilroy";
+}
+#part1{
+    height: 100%;
+    width: 26%;
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    background-image: url(./image3\ \(1\).webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color:hsl(344deg 4.1% 38.27% / 44.3%) ;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+#text-div{
+    /* height: 300px; */
+    width: 400px;
+    position:absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    color: #fff;
+}
+#text-div>h1{
+    font-size: 80px;
+    font-family: "monument";
+    font-weight: 800px;
+    text-transform: uppercase;
+    line-height:70px;
+    letter-spacing: 5px;
+}
+#part3{
+    height: 100%;
+    width: 7%;
+}
+#small-img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translate(0%,-50%);
+    background-image: url(./girl-image\ \(2\).webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s; 
+}
+#over{
+    height: 250px;
+    width: 250px;
+    background-color:hsl(344deg 4.1% 38.27% / 44.3%) ;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s; 
+
+}
+#vertical-text{
+    position: absolute;
+    transform: rotate(90deg);
+    right: -68%;
+    top: -4%;
+    text-transform: uppercase;
+    transform-origin: 0% 0%;
+}
+#vertical-text>h1{
+    font-size:65px;
+    font-weight: 900px;
+    color: transparent;
+    letter-spacing: 8px;
+    font-family: "monument";
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#fff ;
+}
+ .footer{
+    height: 60%;
+    width: 100%;
+    background-color: hsl(346deg, 17%,70%);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+#div1{
+    height: 70%;
+    width: 25%;
+    position: relative;
+    left:8%;
+    background-image: url(./image5.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    #over1{
+        height: 224px;
+        width: 290px;
+        background-color:hsl(344deg 4.1% 38.27% / 44.3%);
+    }
+    #text-1>h5{
+        font-size:1.50vw;
+        position: absolute;
+        top: 150%;
+        left: 12%;
+        color: #fff;
+        padding: 1vw;
+    }
+
+#div2{
+    height: 70%;
+    width: 25%;
+    position: relative;
+    right:-1vw;
+    background-image: url(./image6.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#text-2>h5{
+    font-size:1.50vw;
+    position: absolute;
+    top: 150%;
+    left:40%;
+    color: #fff;
+    padding: 1vw;
+}
+#over2{
+    height: 224px;
+    width: 290px;
+    background-color:hsl(344deg 4.1% 38.27% / 44.3%) ;
+}
+#div3{
+    height: 70%;
+    width: 25%;
+    background-image: url(./image7.webp);
+    position: relative;
+    right:6%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#text-3>h5{
+    font-size:1.50vw;
+    position: absolute;
+    top: 150%;
+    left:70%;
+    color: #fff;
+    padding: 1vw;
+}
+#over3{
+    height: 224px;
+    width: 290px;
+    background-color:hsl(344deg 4.1% 38.27% / 44.3%) ;
+}
+@keyframes move {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        width: 100%;
+        top: 50%;
+    }
+    
+}
+@media (max-width:600px) {
+    main{
+        height: 100%;
+        width: 100%;
+    }
+    #text-div>h1{
+        font-size: 8vmax;
+        line-height: 7vmax;
+        font-weight: 500vmax;
+      
+    }
+    #vertical-text{
+        position: absolute;
+        transform: rotate(90deg);
+        right: -90%;
+        top: -25%;
+        text-transform: uppercase;
+        transform-origin: 0% 0%;
+    }
+    #vertical-text>h1{
+        font-size: 7vmax;
+        position: relative;
+        right:-40px;
+        font-weight: 10vw;
+    }
+    #over1{
+        height: 31.5vw;
+        width: 25vw;
+    }
+    #over2{
+        height: 31.5vw;
+        width: 25vw;
+    }
+    #over3{
+        height: 31.5vw;
+        width: 25vw;
+    }
+    #div1{
+        left: 6vw;
+    }
+    #div2{
+        left: -1vw;
+    }
+    #div3{
+        right: 8vw;
+    }
+    #text-1>h5{
+        font-size: 2.60vw;
+        left: 6.40vw;
+        padding: 2vw;
+    }
+    #text-2>h5{
+        font-size: 2.60vw;
+        left: 32vw;
+        padding: 2vw;
+    }
+    #text-3>h5{
+        font-size: 2.60vw;
+        left: 60vw;
+        padding: 2vw;
+    }
+
+    
+}
