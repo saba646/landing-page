@@ -46,7 +46,7 @@ html,body{
     background-position: center;
     animation-name: move;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 1s; 
 }
 #overlay{
     height: 100%;
@@ -96,10 +96,10 @@ html,body{
     height: 250px;
     width: 250px;
     background-color:hsl(344deg 4.1% 38.27% / 44.3%) ;
-    animation-name: move;
+     animation-name: move;
     animation-iteration-count: infinite;
     animation-duration: 5s;
-    animation-delay: 1s; 
+    animation-delay: 1s;
 
 }
 #vertical-text{
@@ -197,7 +197,7 @@ html,body{
     width: 290px;
     background-color:hsl(344deg 4.1% 38.27% / 44.3%) ;
 }
-@keyframes move {
+ @keyframes move {
     0%{
         left: 0;
         top: 0;
@@ -208,66 +208,78 @@ html,body{
     }
     
 }
-@media (max-width:600px) {
+@media (max-width:375px) {
     main{
         height: 100%;
         width: 100%;
     }
+    #nav{
+        width: 60vw;
+    }
     #text-div>h1{
-        font-size: 8vmax;
-        line-height: 7vmax;
-        font-weight: 500vmax;
+        font-size: 6vw;
+        line-height: 6vmax;
+        font-weight: 900px;
+        font-family: "montument";
       
     }
     #vertical-text{
         position: absolute;
         transform: rotate(90deg);
-        right: -90%;
-        top: -25%;
+        right: -120%;
+        top: -35%;
         text-transform: uppercase;
         transform-origin: 0% 0%;
     }
     #vertical-text>h1{
         font-size: 7vmax;
         position: relative;
-        right:-40px;
+        right:-150px;
         font-weight: 10vw;
     }
     #over1{
-        height: 31.5vw;
+        height: 51vw;
         width: 25vw;
     }
     #over2{
-        height: 31.5vw;
+        height: 51vw;
         width: 25vw;
     }
     #over3{
-        height: 31.5vw;
+        height: 51vw;
         width: 25vw;
     }
     #div1{
-        left: 6vw;
+        left: 9vw;
     }
     #div2{
-        left: -1vw;
+        left: 3vw;
     }
     #div3{
-        right: 8vw;
+        right: 3vw;
     }
     #text-1>h5{
-        font-size: 2.60vw;
-        left: 6.40vw;
-        padding: 2vw;
+        font-size: 3vw;
+        left: 6vw;
+        padding: 3vw;
     }
     #text-2>h5{
-        font-size: 2.60vw;
-        left: 32vw;
-        padding: 2vw;
+        font-size: 3vw;
+        left: 33vw;
+        padding: 3vw;
     }
     #text-3>h5{
-        font-size: 2.60vw;
-        left: 60vw;
-        padding: 2vw;
+        font-size: 3vw;
+        left: 65vw;
+        padding: 3vw;
+    }
+    #small-img{
+        height: 40vw;
+        width: 40vw;
+    }
+    #over{
+        height: 40vw;
+        width: 40vw;
     }
 
     
